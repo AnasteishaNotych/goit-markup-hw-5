@@ -459,10 +459,6 @@ button:focus {
 }
 
 .footer-container-media {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 208px;
   margin-right: 80px;
 }
 
