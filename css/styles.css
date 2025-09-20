@@ -757,7 +757,7 @@ button:focus {
   color: #8e8f99;
 }
 
-.agreement-container {
+.form-agreement-container {
   display: inline-flex;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -778,7 +778,7 @@ button:focus {
   color: #4d5ae5;
 }
 
-.form-checkbox:checked + .form-label-checkbox > .agreement-container {
+.form-checkbox:checked + .form-label-checkbox > .form-agreement-container {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
