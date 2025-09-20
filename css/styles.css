@@ -523,18 +523,18 @@ button:focus {
   border-radius: 4px;
   width: 264px;
   height: 40px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-top: 8px;
+  padding-left: 16px;
+  color: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
 }
 
 .footer-input::placeholder {
   color: #fff;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  padding-top: 8px;
-  padding-left: 16px;
 }
 
 .footer-input-button {
@@ -544,7 +544,7 @@ button:focus {
   gap: 16px;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   border: none;
@@ -574,7 +574,8 @@ button:focus {
   pointer-events: none;
   background-color: rgba(46, 47, 66, 0.4);
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-active {
@@ -618,6 +619,7 @@ button:focus {
 
 .modal-close-button:hover,
 .modal-close-button:focus {
+  background-color: #404bbf;
   border: none;
 }
 
@@ -753,12 +755,6 @@ button:focus {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-checkbox:checked + .form-label-checkbox .agreement-container {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-}
-
 .modal-privacy-link {
   line-height: 1.33;
   text-decoration: underline;
@@ -775,6 +771,16 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+
+.form-checkbox:checked + .form-label-checkbox > .agreement-container,
+.form-checkbox:checked
+  + .form-label-checkbox
+  > .agreement-container
+  > .agreement-icon {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .form-button {
