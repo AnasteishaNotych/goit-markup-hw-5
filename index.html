@@ -473,15 +473,17 @@
         <div class="footer-input-container">
           <p class="footer-input-title">Subscribe</p>
           <form class="footer-form">
-            <input
-              class="footer-input"
-              type="text"
-              name="email"
-              placeholder="E-mail"
-            />
+            <label class="footer-form-label">
+              <input
+                class="footer-input"
+                type="text"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="footer-input-button" type="submit">
               Subscribe
-              <svg class="footer-input-icon" width="24" height="20">
+              <svg class="footer-input-icon" width="24" height="24">
                 <use href="./images/icons.svg#message"></use>
               </svg>
             </button>
@@ -489,7 +491,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-backdrop-hidden is-active">
+
+    <!-----------Modal-------------->
+    <div class="modal-backdrop-hidden">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg class="modal-icon" width="8" height="8">
@@ -505,7 +509,7 @@
                 class="form-input"
                 type="text"
                 name="user-name"
-                id="username"
+                id="user-name"
               />
               <svg class="modal-icon input-icon" width="18" height="24">
                 <use href="./images/icons.svg#person"></use>
@@ -533,11 +537,11 @@
               </svg>
             </div>
           </div>
-          <div class="form-item">
+          <div class="form-item-textarea">
             <label class="form-label" for="user-comment">Comment</label>
             <textarea
               class="form-textarea"
-              name="comment"
+              name="user-comment"
               id="user-comment"
               placeholder="Text input"
               rows="5"
@@ -547,16 +551,17 @@
             <input
               class="form-checkbox visually-hidden"
               type="checkbox"
-              name="checkbox"
-              id="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
             />
-            <span class="agreement-container"
-              ><svg class="agreement-icon" width="10" height="8">
-                <use href="./images/icons.svg#agreement"></use>
-              </svg> </span
-            ><label class="form-label form-label-checkbox" for="checkbox"
+            <label class="form-label form-label-checkbox" for="user-privacy"
+              ><span class="agreement-container"
+                ><svg class="agreement-icon" width="10" height="8">
+                  <use href="./images/icons.svg#agreement"></use>
+                </svg> </span
               >I accept the terms and conditions of the
-              <a class="privacy" href="">Privacy Policy</a></label
+              <a class="modal-privacy-link" href="">Privacy Policy</a></label
             >
           </div>
           <button class="form-button" type="submit">Send</button>
